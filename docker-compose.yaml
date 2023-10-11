@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  database:
+    image: postgres:16-alpine
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=kmanjing
+      - POSTGRES_DB=jagonagym_db
+    volumes:
+      - "psdata:/var/lib/postgres"
+
+volumes:
+  psdata:

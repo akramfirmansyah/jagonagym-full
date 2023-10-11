@@ -1,0 +1,8 @@
+# Folder
+bin
+tmp
+
+# File
+.env
+*.http
+.air.toml
